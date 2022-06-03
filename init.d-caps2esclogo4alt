@@ -2,7 +2,7 @@
 # install to /etc/init.d, ln -s to /etc/runtimes/default (rc-update enable)
 name="caps2esc-logo4alt"
 supervisor="supervise-daemon"
-command="/usr/local/bin/udevmon"
+command="-N -20 /usr/local/bin/udevmon"
 pidfile="/run/${RC_SVCNAME}.pid"
 command_args="-c /etc/caps2esclogo4alt.yaml"
 
