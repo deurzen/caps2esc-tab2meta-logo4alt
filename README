@@ -4,3 +4,9 @@ Custom interception tools plugin that:
   - Maps CAPS to ESC on tap
   - Maps LALT to LLOGO
   - Maps LLOGO to LALT
+
+To install the OpenRC init script:
+
+  sudo install ./caps2esclogo4alt.yaml /etc/caps2esclogo4alt.yaml
+  sudo install ./init.d-caps2esclogo4alt /etc/init.d/caps2esclogo4alt
+  sudo rc-update restart caps2esclogo4alt default
