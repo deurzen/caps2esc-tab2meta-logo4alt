@@ -1,0 +1,4 @@
+- JOB: "intercept -g $DEVNODE | /usr/local/bin/caps2esclogo4alt | uinput -d $DEVNODE"
+  DEVICE:
+    EVENTS:
+      EV_KEY: [KEY_CAPSLOCK]
