@@ -1,0 +1,6 @@
+Custom interception tools plugin that:
+
+  - Maps CAPS to LCTRL on hold
+  - Maps CAPS to ESC on tap
+  - Maps LALT to LLOGO
+  - Maps LLOGO to LALT
