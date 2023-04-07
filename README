@@ -2,11 +2,24 @@ Custom interception tools plugin that:
 
   - Maps CAPS to LCTRL on hold
   - Maps CAPS to ESC on tap
+  - Maps TAB to LMETA on hold
+  - Maps TAB to TAB on tap
   - Maps LALT to LLOGO
   - Maps LLOGO to LALT
+
+Build and install the converter:
+
+  make
+  sudo make install
 
 To install the OpenRC init script:
 
   sudo install ./caps2esclogo4alt.yaml /etc/caps2esclogo4alt.yaml
   sudo install ./init.d-caps2esclogo4alt /etc/init.d/caps2esclogo4alt
   sudo rc-update restart caps2esclogo4alt default
+
+To install the systemd init script:
+
+  sudo install ./caps2esclogo4alt.yaml /etc/caps2esclogo4alt.yaml
+  sudo install ./systemd-caps2esclogo4alt /etc/systemd/system/caps2esclogo4alt.service
+  sudo systemctl enable --now caps2esclogo4alt.service
